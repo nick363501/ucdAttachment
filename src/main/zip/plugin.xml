@@ -10,7 +10,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <header>
-      <identifier id="com.urbancode.air.plugin.SendEmailCC" version="2" name="Send Email with CC"/>
+      <identifier id="com.urbancode.air.plugin.SendEmailAttachment" version="3" name="Send Email with Attachment"/>
       <description>
           The plugin adds new file utilities beyond what is provided in the standard FileUtils plugin.</description>
       <tag>Utilities/Misc</tag>
@@ -19,7 +19,7 @@
 	<!-- ==================================== -->
     <!--        Send an SMTP email            -->
     <!-- ==================================== -->
-    <step-type name="Send SMTP Email with CC">
+    <step-type name="Send SMTP Email with Attachment">
       <description>Send an SMTP email</description>
       <properties>
         <property name="toList" required="true">
@@ -41,7 +41,7 @@
         </property>
 
         <property name="attachment">
-          <property-ui type="textAreaBox"
+          <property-ui type="file"
                        label="attachment"
                        description="The email attachment"/>
         </property>
